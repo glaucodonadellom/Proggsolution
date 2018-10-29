@@ -1,0 +1,57 @@
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>Agendamento de Serviço</title>
+	</head>
+	<body><center>
+		<h2>Agendamento de manutenção ou revisão</h2>
+			</center>
+
+		<fieldset>
+		<form 	action="agendamento.php" enctype="multipart/form-data" method="post">
+			Código do cliente: <br>
+			<input type="number" name="id_cliente"
+					maxlength="30" size="30" 
+			   placeholder="Informe o seu número de cadastro">
+			<br>
+			Código do veículo: <br>
+			<input type="number" name="id_veiculo"
+					maxlength="30" size="30" 
+			   placeholder="Informe o número de cadastro do veiculo">
+			<br>ou<br>
+			Selecione entre os cadastrado:<br>
+			<select name="id_veiculo">
+				<option value="" selected="">Escolha</option>
+				<option value="002">saveiro-shr0256</option>
+				<option value="003">corsa-jth4585</option>
+				<option value="004">santana-ktk9986</option>
+		    </select>
+			   <br>
+			   Selecione o serviço que deseja realizar:
+			   <br>
+		    <select name="tipo_de_serviço">
+				<option value="" selected="">Escolha</option>
+				<option value="trocaOleo">Troca de Óleo</option>
+				<option value="limpezaDeBico">Limpeza de Bico Injetor</option>
+				<option value="revisãoProg">Revisão (Programada)</option>
+				<option value="bateria">Troca da bateria</option>
+				<option value="revisão">Revisão (Check-up)</option>
+
+		    </select>
+			<br>
+			Selecione o dia desejado:<br>
+			<input type="date" name="dia_do_agendamento"><br>
+			Selecione a hora desejada:<br>
+			<input type="time" name="tipo_de_serviço"><br>
+			<br>
+			<hr>
+			Deixe observações logo abaixo se necessário:
+			<input type="text" name="obs" size="80" rows="4">
+
+			<br><br>
+			
+			<input type="submit" value="Enviar">
+		</form>
+	</fieldset>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+{
+	"name" : "alura/alura",
+	"autoload-dev" : {
+		"psr-4" : {
+			"teste" : [
+				".settings",
+				"css",
+				"js"
+			]
+		},
+		"psr-0" : {
+			"teste2" : [
+				".settings",
+				"css",
+				"js"
+			]
+		}
+	},
+	"autoload" : {
+		"psr-4" : {
+			"" : [
+				".settings",
+				"css",
+				"js"
+			]
+		},
+		"psr-0" : {
+			"" : [
+				".settings",
+				"css",
+				"js"
+			]
+		}
+	}
+}
